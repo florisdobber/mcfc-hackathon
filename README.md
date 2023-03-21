@@ -1,8 +1,8 @@
-![Hays and Man City Hackathon 2023 Banner](https://showcodehaysprod.blob.core.windows.net/event-banner/866c2fb5210a4203afd0a0b450f7cd00.png)
+![Hays and Man City Hackathon 2023 Banner](data/images/banner.png)
 
 # Event brief
 
-## Delivering actionable match insights to coaching teams
+> Delivering actionable match insights to coaching teams
 
 ## What you'll need to do:
 

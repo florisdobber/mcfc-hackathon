@@ -2,7 +2,7 @@ import json
 import pandas as pd
 
 # Read in the data
-with open('data\statsbomb\FAWSL_22_23.json', 'r') as f:
+with open('data/StatsBomb/Data/FAWSL_22_23.json', 'r') as f:
     data = json.load(f)
 
 # Extract the required information

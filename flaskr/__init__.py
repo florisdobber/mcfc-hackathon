@@ -16,16 +16,14 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
-
-    # a simple page that says hello
-    @app.route('/')
-    def hello():
-        return render_template('index.html')
     
     from . import db
     db.init_app(app)
     
-    from . import lineup
-    app.register_blueprint(lineup.bp)
+    from . import home
+    app.register_blueprint(home.bp)
+    
+    from . import match
+    app.register_blueprint(match.bp)
 
     return app

@@ -9,12 +9,12 @@ with open('data/StatsBomb/Data/FAWSL_22_23.json', 'r') as f:
 match_data = []
 for item in data:
     match_id = item["match_id"]
-    home_team_name = item["home_team"]["home_team_name"]
-    away_team_name = item["away_team"]["away_team_name"]
+    home_team_id = item["home_team"]["home_team_id"]
+    away_team_id = item["away_team"]["away_team_id"]
     match_data.append({
         "match_id": match_id,
-        "home_team_name": home_team_name,
-        "away_team_name": away_team_name
+        "home_team_id": home_team_id,
+        "away_team_id": away_team_id
     })
 
 # Create a Pandas dataframe

@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 ### Download data
 
-Download the data from [Man City Hack Data](https://drive.google.com/drive/folders/1cGrTtDJXq5otTa-mh2sB4ApTdjKMcwk7)
+Download the StatsBomb and Second Spectrum data from [Man City Hack Data](https://drive.google.com/drive/folders/1cGrTtDJXq5otTa-mh2sB4ApTdjKMcwk7)
 
 ### Seed database
 

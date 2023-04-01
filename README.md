@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 ### Download data
 
-Download the StatsBomb and Second Spectrum data from [Man City Hack Data](https://drive.google.com/drive/folders/1cGrTtDJXq5otTa-mh2sB4ApTdjKMcwk7)
+Download the StatsBomb and Second Spectrum data from [Man City Hack Data](https://drive.google.com/drive/folders/1cGrTtDJXq5otTa-mh2sB4ApTdjKMcwk7) and place it in data folder. The resulting folder structure will look like `data/StatsBomb/Data/[file_name]` and `data/Second Spectrum/Data/[file_name]`.
 
 ### Seed database
 
@@ -27,7 +27,7 @@ flask --app flaskr init-db
 flask --app flaskr run
 ```
 
-Add `--debug` to run the app in debug mode, allowing for live refreshes
+Add `--debug` to run the app in debug mode, allowing for live refreshes.
 
 # Event brief
 

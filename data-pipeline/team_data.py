@@ -1,8 +1,9 @@
+import os
 import json
 import pandas as pd
 
 # Read in the data
-with open('/Users/beatriz/Documents/GitHub/mcfc-hackathon/data/StatsBomb/Data/FAWSL_22_23.json', 'r') as f:
+with open(os.path.join('data', 'StatsBomb', 'Data', 'FAWSL_22_23.json'), 'r') as f:
     data = json.load(f)
 
 # Extract the required information
@@ -27,4 +28,4 @@ for item in data:
 # Create a Pandas dataframe
 df = pd.DataFrame(team_data).drop_duplicates()
 
-df.to_csv('/Users/beatriz/Documents/GitHub/mcfc-hackathon/data-processed/team_data.csv', index=False)
+df.to_csv(os.path.join('data-processed', 'team_data.csv'), index=False)

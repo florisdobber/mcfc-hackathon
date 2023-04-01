@@ -53,6 +53,7 @@ def init_db():
         db.executescript(f.read().decode('utf8'))
         
     load_data('match_data')
+    load_data('team_data')
 
 
 @click.command('init-db')

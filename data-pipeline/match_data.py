@@ -2,7 +2,7 @@ import json
 import pandas as pd
 
 # Read in the data
-with open('data/StatsBomb/Data/FAWSL_22_23.json', 'r') as f:
+with open(os.path.join('data', 'StatsBomb', 'Data', 'FAWSL_22_23.json'), 'r') as f:
     data = json.load(f)
 
 # Extract the required information
@@ -20,4 +20,4 @@ for item in data:
 # Create a Pandas dataframe
 df = pd.DataFrame(match_data)
 
-df.to_csv('data-processed/match_data.csv', index=False)
+df.to_csv(os.path.join('data-processed', 'match_data.csv'), index=False)

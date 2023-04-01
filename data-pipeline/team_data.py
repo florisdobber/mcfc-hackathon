@@ -15,13 +15,13 @@ for item in data:
     away_team_name = item["away_team"]["away_team_name"]
 
     team_data.append({
-        "team_id": home_team_id,
-        "team_name": home_team_name,
+        "id": home_team_id,
+        "name": home_team_name,
     })
 
     team_data.append({
-        "team_id": away_team_id,
-        "team_name": away_team_name
+        "id": away_team_id,
+        "name": away_team_name
     })
 
 # Create a Pandas dataframe

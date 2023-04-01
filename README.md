@@ -1,5 +1,34 @@
 ![Hays and Man City Hackathon 2023 Banner](data/images/banner.png)
 
+# Project Set Up
+
+### Set up virtual environment
+
+```shell
+python -m venv venv
+venv\Scripts\activate  # Windows
+. venv/bin/activate  # macOS/Linux
+pip install -r requirements.txt
+```
+
+### Download data
+
+Download the data from [Man City Hack Data](https://drive.google.com/drive/folders/1cGrTtDJXq5otTa-mh2sB4ApTdjKMcwk7)
+
+### Seed database
+
+```shell
+flask --app flaskr init-db
+```
+
+### Start app
+
+```shell
+flask --app flaskr run
+```
+
+Add `--debug` to run the app in debug mode, allowing for live refreshes
+
 # Event brief
 
 > Delivering actionable match insights to coaching teams

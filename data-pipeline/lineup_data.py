@@ -1,5 +1,6 @@
 import os
 import json
+import numpy as np
 import pandas as pd
 
 lineup_data = []
@@ -69,4 +70,4 @@ for filename in os.listdir(directory_path):
 
 df = pd.DataFrame(lineup_data).drop_duplicates()
 
-df.to_csv('data-processed/lineup_data.csv', index=False)
+df.to_csv('data-processed/lineup_data.csv', index=False, na_rep='')

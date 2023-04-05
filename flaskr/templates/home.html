@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Display</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container" id="selector-container">
+        <select id="match-selector" name="match-selector" onchange="goToMatch()">
+            <option value="null">Select a match...</option>
+            {% for match in data %}
+                <option value="{{ match.match_id }}">{{ match.home_team_name }} vs {{ match.away_team_name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+</body>
+<script>
+    function goToMatch() {
+      var selected_option = document.getElementById("match-selector").value;
+      
+      if (selected_option != "null") {
+        window.location = "{{ 'match' }}";
+      }
+    }
+</script>
+</html>

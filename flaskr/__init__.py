@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 
 def create_app(test_config=None):
@@ -16,6 +16,10 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
+    
+    @app.route('/hello', methods=['GET'])
+    def hello():
+        return jsonify("hello")
     
     from . import db
     db.init_app(app)

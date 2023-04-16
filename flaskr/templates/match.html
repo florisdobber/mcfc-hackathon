@@ -4,9 +4,98 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OptiSub</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles2.css') }}">
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     </head>
 <body>
-    <h1>Hello</h1>
+    <div>
+        <div>
+            <div class="header">
+                <h1 class="teamName" id="homeTeamName">{{ match_data.home_team_name }}</h1>
+                <h1>0 - 0</h1>
+                <h1 class="teamName" id="awayTeamName">{{ match_data.away_team_name }}</h1>
+            </div>
+            <div class="minuteDisplay">
+                <h1 id="sliderValue">00:00</h1>
+                <div class="sliderContainer">
+                    <button onclick="togglePlay()">
+                        <img id="play-icon" src="{{ url_for('static', filename='play.png') }}" alt="Play">
+                        <img id="pause-icon" src="{{ url_for('static', filename='pause.png') }}" alt="Pause" style="display:none">
+                    </button>
+                    <input id="minuteSlider" type="range" min="0" max="90" step="1" value="0">
+                </div>
+            </div>
+        </div>
+        
+        <h2>Line-up</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Jersey Number</th>
+                    <th>Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for player in lineup_data %}
+                <tr>
+                    <td>{{ player.name }}</td>
+                    <td>{{ player.jersey_number }}</td>
+                    <td>{{ player.position }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h2>Bench</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Jersey Number</th>
+                    <th>Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for player in lineup_data %}
+                <tr>
+                    <td>{{ player.name }}</td>
+                    <td>{{ player.jersey_number }}</td>
+                    <td>{{ player.position }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </body>
+</html>
+<script>
+    var slider = document.getElementById("minuteSlider");
+    var output = document.getElementById("sliderValue");
+    var isPlaying = false;
+    var playIcon = document.getElementById("play-icon");
+    var pauseIcon = document.getElementById("pause-icon");
+    
+    slider.addEventListener("input", function() {
+        output.innerHTML = slider.value.padStart(2, '0') + ":00";
+    });
+
+    function togglePlay() {
+        isPlaying = !isPlaying;
+        if (isPlaying) {
+            playIcon.style.display = "none";
+            pauseIcon.style.display = "inline";
+        } else {
+            playIcon.style.display = "inline";
+            pauseIcon.style.display = "none";
+        }
+    }
+
+    setInterval(function() {
+        if (parseInt(slider.value) < 90 && isPlaying) {
+            slider.value = parseInt(slider.value) + 1;
+            output.innerHTML = slider.value.padStart(2, '0') + ":00";
+        }
+      }, 500);
+</script>
+</html>

@@ -1,0 +1,42 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamName {
+    margin: 0 5vw;
+    width: 30vw;
+}
+
+#homeTeamName {
+    text-align: right;
+}
+
+#awayTeamName {
+    text-align: left;
+}
+
+.minuteDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#minuteSlider {
+    width: 50vw;
+}
+
+.sliderContainer {
+    display: flex;
+}
+
+button {
+    background: none;
+    border: none;
+}

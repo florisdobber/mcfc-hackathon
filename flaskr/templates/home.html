@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Display</title>
+    <title>OptiSub</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
-    <h1>Welcome!</h1>
-    <div class="container" id="selector-container">
-        <select id="match-selector" name="match-selector" onchange="goToMatch()">
-            <option value="null">Select a match...</option>
+    <div>
+        <h1>Every Substitution Matters</h1>
+        <p>
+            Welcome to OptiSub, the coaching companion that revolutionizes your game management with real-time insights!
+            Our AI-driven application equips coaches with invaluable data to make smarter, more effective substitutions, maximizing your team's potential. 
+            OptiSub seamlessly analyzes player performance, fatigue, and situational context, delivering tailored recommendations on the fly. 
+            Say goodbye to guesswork and hello to strategic decision-making that takes your team to new heights. 
+            Select a match below to start optimizing your game today!
+        </p>
+        <select id="match-selector" onchange="goToMatch()">
+            <option value="">Select a match...</option>
             {% for match in data %}
                 <option value="{{ match.match_id }}">{{ match.home_team_name }} vs {{ match.away_team_name }}</option>
             {% endfor %}
@@ -21,7 +29,7 @@
     function goToMatch() {
       var selected_option = document.getElementById("match-selector").value;
       
-      if (selected_option != "null") {
+      if (selected_option != "") {
         window.location = "{{ 'match' }}";
       }
     }

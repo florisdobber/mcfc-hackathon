@@ -20,6 +20,7 @@ def home():
             ON match_data.home_team_id = home_team.id
         LEFT JOIN team_data AS away_team
             ON match_data.away_team_id = away_team.id
+        WHERE match_data.match_id IN (3852832, 3856030, 3855980, 3855947, 3855961, 3856040)
         """
     data = db.execute(query).fetchall()
     

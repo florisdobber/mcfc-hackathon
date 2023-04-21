@@ -40,3 +40,37 @@ button {
     background: none;
     border: none;
 }
+
+.mainContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+  
+table th, 
+table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #6CABDD;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table td:first-child {
+    font-weight: bold;
+}

@@ -56,6 +56,7 @@ def init_db():
     load_data('team_data')
     load_data('player_data')
     load_data('lineup_data')
+    load_data('goal_data')
 
 
 @click.command('init-db')

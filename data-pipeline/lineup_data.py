@@ -2,6 +2,22 @@ import os
 import json
 import numpy as np
 import pandas as pd
+from datetime import datetime
+
+def time_to_seconds(time_str):
+    if time_str is None:
+        return None
+    
+    time_format = "%H:%M:%S.%f"
+    parsed_time = datetime.strptime(time_str, time_format)
+
+    hours = parsed_time.hour
+    minutes = parsed_time.minute
+    seconds = parsed_time.second
+    milliseconds = parsed_time.microsecond / 1000
+
+    total_seconds = hours * 3600 + minutes * 60 + seconds + milliseconds / 1000
+    return round(total_seconds, 3)
 
 lineup_data = []
 
@@ -59,10 +75,10 @@ for filename in os.listdir(directory_path):
                         "team_id": team_id,
                         "player_id": player_id,
                         "position": position,
-                        "start_time": start_time,
+                        "start_time": time_to_seconds(start_time),
                         "start_period": start_period,
                         "start_reason": start_reason,
-                        "end_time": end_time,
+                        "end_time": time_to_seconds(end_time),
                         "end_period": end_period,
                         "end_reason": end_reason,
                         "position_number": position_counter

@@ -12,7 +12,7 @@
         <div>
             <div class="header">
                 <h1 class="teamName" id="homeTeamName">{{ match_data.home_team_name }}</h1>
-                <h1>0 - 0</h1>
+                <h1 id="score">0 - 0</h1>
                 <h1 class="teamName" id="awayTeamName">{{ match_data.away_team_name }}</h1>
             </div>
             <div class="minuteDisplay">
@@ -26,58 +26,123 @@
                 </div>
             </div>
         </div>
-        
-        <h2>Line-up</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Jersey Number</th>
-                    <th>Position</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for player in lineup_data %}
-                <tr>
-                    <td>{{ player.name }}</td>
-                    <td>{{ player.jersey_number }}</td>
-                    <td>{{ player.position }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+    </div>
 
-        <h2>Bench</h2>
-        <table>
+    <div class="mainContainer">
+        <div>
+            <h2>Current Lineup</h2>
+            <table id="current-lineup">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Position</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div>
+            <h2>Current Substitutes</h2>
+            <table id="current-subs">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Position</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div>
+        <h2>Recommend Substitutions</h2>
+        <table id="recommended-subs">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Jersey Number</th>
-                    <th>Position</th>
+                    <th colspan="2">OUT</th>
+                    <th> </th>
+                    <th colspan="2">IN</th>
                 </tr>
             </thead>
             <tbody>
-                {% for player in lineup_data %}
                 <tr>
-                    <td>{{ player.name }}</td>
-                    <td>{{ player.jersey_number }}</td>
-                    <td>{{ player.position }}</td>
+                    <td>1</td>
+                    <td>Hello</td>
+                    <td> </td>
+                    <td>2</td>
+                    <td>Bye</td>
                 </tr>
-                {% endfor %}
             </tbody>
         </table>
     </div>
+    
 </body>
 </html>
 <script>
     var slider = document.getElementById("minuteSlider");
     var output = document.getElementById("sliderValue");
+    var score = document.getElementById("score");
     var isPlaying = false;
     var playIcon = document.getElementById("play-icon");
     var pauseIcon = document.getElementById("pause-icon");
+    var goalData = {{ goal_data.json|tojson }};
+    var lineupData = {{ lineup_data.json|tojson }};
+    let lineupTable = document.getElementById('current-lineup').getElementsByTagName('tbody')[0];
+    let subsTable = document.getElementById('current-subs').getElementsByTagName('tbody')[0];
+    updateLineupTable();
+    updateSubsTable();
+    updateScore();
+
+    function updateLineupTable() {
+        filteredPlayers = lineupData.filter(player => (player.start_time <= slider.value * 60) && (player.end_time ===  "" || player.end_time > slider.value * 60));
+        lineupTable.innerHTML = "";
+
+        for (let i = 0; i < filteredPlayers.length; i++) {
+            let player = filteredPlayers[i];
+                let row = lineupTable.insertRow(i);
+                let numberCell = row.insertCell(0);
+                let nameCell = row.insertCell(1);
+                let positionCell = row.insertCell(2);
+                numberCell.innerHTML = player.jersey_number;
+                nameCell.innerHTML = player.name;
+                positionCell.innerHTML = player.position;
+        }
+    };
+
+    function updateSubsTable() {
+        filteredPlayers = lineupData.filter(player => player.start_time > slider.value * 60 || (player.end_time != "" && player.end_time <= slider.value * 60));
+        subsTable.innerHTML = "";
+
+        for (let i = 0; i < filteredPlayers.length; i++) {
+            let player = filteredPlayers[i];
+                let row = subsTable.insertRow(i);
+                let numberCell = row.insertCell(0);
+                let nameCell = row.insertCell(1);
+                let positionCell = row.insertCell(2);
+                numberCell.innerHTML = player.jersey_number;
+                nameCell.innerHTML = player.name;
+                positionCell.innerHTML = player.position;
+        }
+    };
+
+    function updateScore() {
+        homeGoals = goalData.filter(goal => goal.team_id === {{ match_data.home_team_id }}  && goal.time <= slider.value * 60).length;
+        awayGoals = goalData.filter(goal => goal.team_id === {{ match_data.away_team_id }}  && goal.time <= slider.value * 60).length;
+        score.innerHTML = homeGoals + " - " + awayGoals;
+    };
     
     slider.addEventListener("input", function() {
         output.innerHTML = slider.value.padStart(2, '0') + ":00";
+        updateLineupTable();
+        updateSubsTable();
+        updateScore();
+        isPlaying = false;
+        playIcon.style.display = "inline";
+        pauseIcon.style.display = "none";
     });
 
     function togglePlay() {
@@ -89,12 +154,18 @@
             playIcon.style.display = "inline";
             pauseIcon.style.display = "none";
         }
-    }
+    };
+    
 
     setInterval(function() {
         if (parseInt(slider.value) < 90 && isPlaying) {
             slider.value = parseInt(slider.value) + 1;
             output.innerHTML = slider.value.padStart(2, '0') + ":00";
+            updateLineupTable();
+            updateSubsTable();
+            updateScore();
+        } else if (parseInt(slider.value) >= 90 && isPlaying) {
+            togglePlay();
         }
       }, 500);
 </script>

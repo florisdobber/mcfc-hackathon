@@ -11,9 +11,13 @@ venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
-### Download data
+### (Optional) Download data 
 
 Download the StatsBomb and Second Spectrum data from [Man City Hack Data](https://drive.google.com/drive/folders/1cGrTtDJXq5otTa-mh2sB4ApTdjKMcwk7) and place it in data folder. The resulting folder structure will look like `data/StatsBomb/Data/[file_name]` and `data/Second Spectrum/Data/[file_name]`.
+
+### (Optional) Generate seed data
+
+To generate updated seed data, run the scripts in the `data-pipeline` folder. This will create or update the CSV files in the `data-processed` folder.
 
 ### Seed database
 

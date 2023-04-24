@@ -34,10 +34,10 @@ def match(match_id, minute=0):
             lineup_data.position,
             lineup_data.start_time,
             lineup_data.end_time
-        FROM lineup_data
-        LEFT JOIN player_data
-            ON lineup_data.player_id = player_data.id
-        WHERE lineup_data.match_id = {match_id}
+        FROM player_data
+        LEFT JOIN lineup_data
+            ON player_data.id = lineup_data.player_id
+        WHERE (lineup_data.match_id = {match_id} OR lineup_data.match_id IS NULL)
             AND player_data.team_id = 746
         """
     lineup_data = db.execute(query).fetchall()

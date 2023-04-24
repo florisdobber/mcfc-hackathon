@@ -57,32 +57,40 @@ for filename in os.listdir(directory_path):
 
         for team in data:
             team_id = team["team_id"]
+            
             for player in team["lineup"]:
-                player_id = player["player_id"]
                 position_counter = 0
-                for item in player["positions"]:
-                    position_counter += 1
-                    position = item["position"]
-                    start_time = item["from"]
-                    start_period = item["from_period"]
-                    start_reason = item["start_reason"]
-                    end_time = item["to"]
-                    end_period = item["to_period"]
-                    end_reason = item["end_reason"]
-
+                
+                if len(player['positions']) == 0:
                     lineup_data.append({
                         "match_id": match_id,
                         "team_id": team_id,
-                        "player_id": player_id,
-                        "position": position,
-                        "start_time": time_to_seconds(start_time),
-                        "start_period": start_period,
-                        "start_reason": start_reason,
-                        "end_time": time_to_seconds(end_time),
-                        "end_period": end_period,
-                        "end_reason": end_reason,
-                        "position_number": position_counter
+                        "player_id": player["player_id"],
+                        "position": None,
+                        "start_time": None,
+                        "start_period": None,
+                        "start_reason": None,
+                        "end_time": None,
+                        "end_period": None,
+                        "end_reason": None,
+                        "position_number": 0
                     })
+                else:
+                    for item in player["positions"]:
+                        position_counter += 1
+                        lineup_data.append({
+                            "match_id": match_id,
+                            "team_id": team_id,
+                            "player_id": player["player_id"],
+                            "position": item["position"],
+                            "start_time": time_to_seconds(item["from"]),
+                            "start_period": item["from_period"],
+                            "start_reason": item["start_reason"],
+                            "end_time": time_to_seconds(item["to"]),
+                            "end_period": item["to_period"],
+                            "end_reason": item["end_reason"],
+                            "position_number": position_counter
+                        })
 
 df = pd.DataFrame(lineup_data).drop_duplicates()
 

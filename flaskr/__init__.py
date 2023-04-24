@@ -1,6 +1,7 @@
 import os
+import random
 
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 
 
 def create_app(test_config=None):
@@ -17,9 +18,32 @@ def create_app(test_config=None):
     except OSError:
         pass
     
-    @app.route('/hello', methods=['GET'])
-    def hello():
-        return jsonify("hello")
+    @app.route('/sub_recs', methods=['POST'])
+    def sub_recs():
+        time = int(request.json['time'])
+        lineup = request.json['lineup']
+        subs = request.json['subs']
+        
+        random.seed(time)
+        
+        # Pick 3 random players from both sides
+        out_subs = random.sample(lineup, k=3)
+        in_subs = random.sample(subs, k=3)
+        
+        # Create object
+        recommended_subs = [
+            {
+                'out_jersey_number': out_subs[i]['jersey_number'],
+                'out_name': out_subs[i]['name'],
+                'time': random.randint(max(int(time / 60), 60), 90),
+                'in_jersey_number': in_subs[i]['jersey_number'],
+                'in_name': in_subs[i]['name'],
+            } 
+            for i 
+            in range(3)
+        ]
+        
+        return jsonify(recommended_subs)
     
     from . import db
     db.init_app(app)

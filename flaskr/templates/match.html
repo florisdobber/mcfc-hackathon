@@ -4,31 +4,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OptiSub</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles2.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='match_styling.css') }}">
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     </head>
 <body>
     <div>
-        <div>
-            <div class="header">
-                <h1 class="teamName" id="homeTeamName">{{ match_data.home_team_name }}</h1>
-                <h1 id="score">0 - 0</h1>
-                <h1 class="teamName" id="awayTeamName">{{ match_data.away_team_name }}</h1>
-            </div>
-            <div class="minuteDisplay">
-                <h1 id="sliderValue">00:00</h1>
-                <div class="sliderContainer">
-                    <button onclick="togglePlay()">
-                        <img id="play-icon" src="{{ url_for('static', filename='play.png') }}" alt="Play">
-                        <img id="pause-icon" src="{{ url_for('static', filename='pause.png') }}" alt="Pause" style="display:none">
-                    </button>
-                    <input id="minuteSlider" type="range" min="0" max="90" step="1" value="0">
-                </div>
-            </div>
+        <div class="flexContainer" id="matchInfo">
+            <h1 class="teamName" id="homeTeamName">{{ match_data.home_team_name }}</h1>
+            <h1 id="score">0 - 0</h1>
+            <h1 class="teamName" id="awayTeamName">{{ match_data.away_team_name }}</h1>
+        </div>
+        <div class="flexContainer" id="timeContainer">
+            <h1 id="sliderValue">00:00</h1>
+        </div>
+        <div class="flexContainer">
+            <button onclick="togglePlay()">
+                <img id="play-icon" src="{{ url_for('static', filename='play.png') }}">
+                <img id="pause-icon" src="{{ url_for('static', filename='pause.png') }}" style="display:none">
+            </button>
+            <input id="timeSlider" type="range" min="0" max="5400" step="1" value="0">
         </div>
     </div>
 
-    <div class="mainContainer">
+    <div class="flexContainer" id="tablesContainer">
         <div>
             <h2>Current Lineup</h2>
             <table id="current-lineup">
@@ -55,95 +53,129 @@
                 </thead>
                 <tbody></tbody>
             </table>
+            <div class="flexContainer" id="tableTitleContainer">
+                <h2>Recommend Substitutions</h2>
+                <button onclick="updateRecs()">
+                    <img src="{{ url_for('static', filename='refresh.png') }}">
+                </button>
+            </div>
+            <table id="recommended-subs">
+                <thead>
+                    <tr>
+                        <th colspan="2">Out</th>
+                        <th><img id="clockIcon" src="{{ url_for('static', filename='clock.png') }}"></th>
+                        <th colspan="2">In</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
         </div>
     </div>
 
-    <div>
-        <h2>Recommend Substitutions</h2>
-        <table id="recommended-subs">
-            <thead>
-                <tr>
-                    <th colspan="2">OUT</th>
-                    <th> </th>
-                    <th colspan="2">IN</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Hello</td>
-                    <td> </td>
-                    <td>2</td>
-                    <td>Bye</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
 </body>
 </html>
 <script>
-    var slider = document.getElementById("minuteSlider");
-    var output = document.getElementById("sliderValue");
+    var timeSlider = document.getElementById("timeSlider");
+    var timeDisplay = document.getElementById("sliderValue");
     var score = document.getElementById("score");
-    var isPlaying = false;
     var playIcon = document.getElementById("play-icon");
     var pauseIcon = document.getElementById("pause-icon");
-    var goalData = {{ goal_data.json|tojson }};
-    var lineupData = {{ lineup_data.json|tojson }};
     let lineupTable = document.getElementById('current-lineup').getElementsByTagName('tbody')[0];
     let subsTable = document.getElementById('current-subs').getElementsByTagName('tbody')[0];
+    let recsTable = document.getElementById('recommended-subs').getElementsByTagName('tbody')[0];
+
+    var goalData = {{ goal_data.json|tojson }};
+    var lineupData = {{ lineup_data.json|tojson }};
+    lineupData.sort((a, b) => a.jersey_number - b.jersey_number);  // Sort players by jersey number
+
+    var isPlaying = false;
+
     updateLineupTable();
     updateSubsTable();
     updateScore();
+    updateRecs();
 
     function updateLineupTable() {
-        filteredPlayers = lineupData.filter(player => (player.start_time <= slider.value * 60) && (player.end_time ===  "" || player.end_time > slider.value * 60));
+        lineupPlayers = lineupData.filter(player => (parseInt(player.start_time) <= timeSlider.value) && (player.end_time ===  "" || player.end_time > timeSlider.value));
+
         lineupTable.innerHTML = "";
 
-        for (let i = 0; i < filteredPlayers.length; i++) {
-            let player = filteredPlayers[i];
-                let row = lineupTable.insertRow(i);
-                let numberCell = row.insertCell(0);
-                let nameCell = row.insertCell(1);
-                let positionCell = row.insertCell(2);
-                numberCell.innerHTML = player.jersey_number;
-                nameCell.innerHTML = player.name;
-                positionCell.innerHTML = player.position;
+        for (let i = 0; i < lineupPlayers.length; i++) {
+            let player = lineupPlayers[i];
+            let row = lineupTable.insertRow(i);
+            let numberCell = row.insertCell(0);
+            let nameCell = row.insertCell(1);
+            let positionCell = row.insertCell(2);
+            numberCell.innerHTML = player.jersey_number;
+            nameCell.innerHTML = player.name;
+            positionCell.innerHTML = player.position;
         }
     };
 
     function updateSubsTable() {
-        filteredPlayers = lineupData.filter(player => player.start_time > slider.value * 60 || (player.end_time != "" && player.end_time <= slider.value * 60));
+        subPlayers = lineupData.filter(player => parseInt(player.start_time) > timeSlider.value || parseInt(player.end_time) <= timeSlider.value  || player.start_time === "");
+
+        // Remove players currently in lineup
+        subPlayers = subPlayers.filter(player1 => !lineupPlayers.some(player2 => player2.jersey_number === player1.jersey_number));
+
+        // Remove duplicates in subs table
+        subPlayers = subPlayers.filter((obj, index, self) => index === self.findIndex((t) => (t.jersey_number === obj.jersey_number)));
+
         subsTable.innerHTML = "";
 
-        for (let i = 0; i < filteredPlayers.length; i++) {
-            let player = filteredPlayers[i];
-                let row = subsTable.insertRow(i);
-                let numberCell = row.insertCell(0);
-                let nameCell = row.insertCell(1);
-                let positionCell = row.insertCell(2);
-                numberCell.innerHTML = player.jersey_number;
-                nameCell.innerHTML = player.name;
-                positionCell.innerHTML = player.position;
+        for (let i = 0; i < subPlayers.length; i++) {
+            let player = subPlayers[i];
+            let row = subsTable.insertRow(i);
+            let numberCell = row.insertCell(0);
+            let nameCell = row.insertCell(1);
+            let positionCell = row.insertCell(2);
+            numberCell.innerHTML = player.jersey_number;
+            nameCell.innerHTML = player.name;
+            positionCell.innerHTML = "Substitute";
         }
     };
 
     function updateScore() {
-        homeGoals = goalData.filter(goal => goal.team_id === {{ match_data.home_team_id }}  && goal.time <= slider.value * 60).length;
-        awayGoals = goalData.filter(goal => goal.team_id === {{ match_data.away_team_id }}  && goal.time <= slider.value * 60).length;
+        homeGoals = goalData.filter(goal => goal.team_id === {{ match_data.home_team_id }}  && goal.time <= timeSlider.value).length;
+        awayGoals = goalData.filter(goal => goal.team_id === {{ match_data.away_team_id }}  && goal.time <= timeSlider.value).length;
         score.innerHTML = homeGoals + " - " + awayGoals;
     };
-    
-    slider.addEventListener("input", function() {
-        output.innerHTML = slider.value.padStart(2, '0') + ":00";
-        updateLineupTable();
-        updateSubsTable();
-        updateScore();
-        isPlaying = false;
-        playIcon.style.display = "inline";
-        pauseIcon.style.display = "none";
-    });
+
+    function updateRecs() {
+        let recPlayers;
+
+        fetch('/sub_recs', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({time: timeSlider.value, lineup: lineupPlayers, subs: subPlayers})
+        })
+        .then(response => response.json())
+        .then(responseData => {
+            recPlayers = responseData;
+
+            recsTable.innerHTML = "";
+
+            for (let i = 0; i < recPlayers.length; i++) {
+                let sub = recPlayers[i];
+                let row = recsTable.insertRow(i);
+                let outNumberCell = row.insertCell(0);
+                let outNameCell = row.insertCell(1);
+                let timeCell = row.insertCell(2);
+                let inNumberCell = row.insertCell(3);
+                let inNameCell = row.insertCell(4);
+                outNumberCell.innerHTML = sub.out_jersey_number;
+                outNameCell.innerHTML = sub.out_name;
+                timeCell.innerHTML = "'" + sub.time;
+                inNumberCell.innerHTML = sub.in_jersey_number;
+                inNameCell.innerHTML = sub.in_name;
+            }
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    };
 
     function togglePlay() {
         isPlaying = !isPlaying;
@@ -155,16 +187,30 @@
             pauseIcon.style.display = "none";
         }
     };
+
+    timeSlider.addEventListener("input", function() {
+        minutes = Math.floor(timeSlider.value / 60);
+        seconds = timeSlider.value % 60;
+        timeDisplay.innerHTML = minutes.toString().padStart(2, '0') + ":" + seconds.toString().padStart(2, '0');
+        updateLineupTable();
+        updateSubsTable();
+        updateScore();
+        isPlaying = false;
+        playIcon.style.display = "inline";
+        pauseIcon.style.display = "none";
+    });
     
 
     setInterval(function() {
-        if (parseInt(slider.value) < 90 && isPlaying) {
-            slider.value = parseInt(slider.value) + 1;
-            output.innerHTML = slider.value.padStart(2, '0') + ":00";
+        if (parseInt(timeSlider.value) < 5400 && isPlaying) {
+            timeSlider.value = parseInt(timeSlider.value) + 60;
+            minutes = Math.floor(timeSlider.value / 60);
+            seconds = timeSlider.value % 60;
+            timeDisplay.innerHTML = minutes.toString().padStart(2, '0') + ":" + seconds.toString().padStart(2, '0');
             updateLineupTable();
             updateSubsTable();
             updateScore();
-        } else if (parseInt(slider.value) >= 90 && isPlaying) {
+        } else if (parseInt(timeSlider.value) >= 5400 && isPlaying) {
             togglePlay();
         }
       }, 500);

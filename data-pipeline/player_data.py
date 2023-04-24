@@ -16,7 +16,7 @@ for filename in os.listdir(directory_path):
             team_id = team["team_id"]
             for player in team["lineup"]:
                 player_id = player["player_id"]
-                player_name = player["player_name"]
+                player_name = player["player_nickname"] if player["player_nickname"] != None else player["player_name"]
                 jersey_number = player["jersey_number"]
 
                 player_data.append({

@@ -2,38 +2,36 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.header {
+.flexContainer {
     display: flex;
+    justify-content: center;
+}
+
+#matchInfo {
     justify-content: center;
     align-items: center;
 }
 
 .teamName {
-    margin: 0 5vw;
-    width: 30vw;
+    width: 40vw;
 }
 
 #homeTeamName {
+    margin-right: 5vw;
     text-align: right;
 }
 
 #awayTeamName {
+    margin-left: 5vw;
     text-align: left;
 }
 
-.minuteDisplay {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+#timeContainer {
     align-items: center;
 }
 
-#minuteSlider {
+#timeSlider {
     width: 50vw;
-}
-
-.sliderContainer {
-    display: flex;
 }
 
 button {
@@ -41,8 +39,11 @@ button {
     border: none;
 }
 
-.mainContainer {
-    display: flex;
+button img {
+    width: 30px;
+}
+
+#tablesContainer {
     justify-content: space-evenly;
 }
 
@@ -71,6 +72,40 @@ table tr:hover {
     background-color: #ddd;
 }
 
-table td:first-child {
+td:nth-child(1) {
     font-weight: bold;
+    width: 2vw;
+}
+
+td:nth-child(2),
+td:nth-child(3) {
+    width: 18vw;
+}
+
+#recommended-subs td:nth-child(1),
+#recommended-subs td:nth-child(4) {
+    font-weight: bold;
+    width: 2vw;
+}
+
+#recommended-subs td:nth-child(2),
+#recommended-subs td:nth-child(5) {
+    width: 15vw;
+}
+
+#recommended-subs td:nth-child(3) {
+    width: 2vw;
+}
+
+#recommended-subs th:nth-child(2) {
+    padding: 0px;
+}
+
+#clockIcon {
+    width: 25px;
+    height: 25px;
+}
+
+#tableTitleContainer {
+    justify-content: left;
 }

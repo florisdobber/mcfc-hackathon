@@ -1,216 +1,272 @@
 match_id,team_id,player_id,position,start_time,start_period,start_reason,end_time,end_period,end_reason,position_number
-3852832,746,4637,Goalkeeper,0.0,1,Starting XI,,,Final Whistle,1
-3852832,746,6818,Right Wing,5429.931,2,Substitution - On (Tactical),,,Final Whistle,1
-3852832,746,10185,Right Center Back,0.0,1,Starting XI,4291.624,2.0,Player Off,1
-3852832,746,10185,Right Center Back,4306.595,2,Player On,,,Final Whistle,2
-3852832,746,10252,Left Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3852832,746,15555,Left Wing,0.0,1,Starting XI,,,Final Whistle,1
-3852832,746,15570,Right Wing,0.0,1,Starting XI,5429.931,2.0,Substitution - Off (Tactical),1
-3852832,746,19416,Left Center Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3852832,746,25554,Center Forward,0.0,1,Starting XI,2012.838,1.0,Player Off,1
-3852832,746,25554,Center Forward,2075.225,1,Player On (Off Camera),,,Final Whistle,2
-3852832,746,25632,Center Defensive Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3852832,746,32210,Left Back,0.0,1,Starting XI,,,Final Whistle,1
-3852832,746,62666,Right Center Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3852832,746,221888,Right Back,0.0,1,Starting XI,,,Final Whistle,1
-3852832,968,5000,Left Wing Back,0.0,1,Starting XI,2700.0,2.0,Tactical Shift,1
-3852832,968,5000,Left Back,2700.0,2,Tactical Shift,,,Final Whistle,2
-3852832,968,10229,Center Forward,0.0,1,Starting XI,2700.0,2.0,Tactical Shift,1
-3852832,968,10229,Right Center Forward,2700.0,2,Tactical Shift,4273.076,2.0,Player Off,2
-3852832,968,10229,Right Center Forward,4302.799,2,Player On,4819.678,2.0,Substitution - Off (Tactical),3
-3852832,968,10237,Goalkeeper,0.0,1,Starting XI,,,Final Whistle,1
-3852832,968,10404,Right Wing Back,0.0,1,Starting XI,2700.0,2.0,Tactical Shift,1
-3852832,968,10404,Right Back,2700.0,2,Tactical Shift,4806.019,2.0,Substitution - Off (Tactical),2
-3852832,968,10405,Left Defensive Midfield,2700.0,2,Tactical Shift,2700.0,2.0,Substitution - On (Tactical),1
-3852832,968,10405,Center Back,2700.0,2,Substitution - On (Tactical),,,Final Whistle,2
-3852832,968,10516,Left Defensive Midfield,0.0,1,Starting XI,2700.0,2.0,Tactical Shift,1
-3852832,968,10516,Left Center Forward,2700.0,2,Tactical Shift,,,Final Whistle,2
-3852832,968,11338,Left Wing,0.0,1,Starting XI,2700.0,2.0,Substitution - Off (Tactical),1
-3852832,968,15616,Right Defensive Midfield,0.0,1,Starting XI,3094.793,2.0,Player Off,1
-3852832,968,15616,Right Defensive Midfield,3137.135,2,Player On,,,Final Whistle,2
-3852832,968,15620,Right Midfield,2700.0,2,Tactical Shift,2700.0,2.0,Substitution - On (Tactical),1
-3852832,968,15620,Left Wing,2700.0,2,Substitution - On (Tactical),,,Final Whistle,2
-3852832,968,18999,Right Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3852832,968,45294,Right Center Forward,4819.678,2,Substitution - On (Tactical),,,Final Whistle,1
-3852832,968,46973,Right Back,4806.019,2,Substitution - On (Tactical),,,Final Whistle,1
-3852832,968,49697,Center Back,0.0,1,Starting XI,2700.0,2.0,Substitution - Off (Tactical),1
-3852832,968,63788,Right Wing,0.0,1,Starting XI,2700.0,2.0,Tactical Shift,1
-3852832,968,63788,Left Midfield,2700.0,2,Tactical Shift,4078.369,2.0,Substitution - Off (Tactical),2
-3852832,968,131570,Left Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3852832,968,276443,Left Midfield,4078.369,2,Substitution - On (Tactical),,,Final Whistle,1
-3856030,746,4637,Goalkeeper,0.0,1,Starting XI,,,Final Whistle,1
-3856030,746,4649,Right Back,0.0,1,Starting XI,2700.0,2.0,Substitution - Off (Tactical),1
-3856030,746,5078,Right Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3856030,746,6818,Right Midfield,4324.881,2,Substitution - On (Tactical),,,Final Whistle,1
-3856030,746,10163,Left Back,0.0,1,Starting XI,,,Final Whistle,1
-3856030,746,10252,Left Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3856030,746,15555,Left Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3856030,746,15570,Right Midfield,0.0,1,Starting XI,4324.881,2.0,Substitution - Off (Tactical),1
-3856030,746,19416,Left Center Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3856030,746,25554,Center Forward,0.0,1,Starting XI,,,Final Whistle,1
-3856030,746,25632,Center Defensive Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3856030,746,49938,Right Center Midfield,0.0,1,Starting XI,3680.481,2.0,Substitution - Off (Tactical),1
-3856030,746,62666,Right Center Midfield,3680.481,2,Substitution - On (Tactical),,,Final Whistle,1
-3856030,746,221888,Right Back,2700.0,2,Substitution - On (Tactical),,,Final Whistle,1
-3856030,2647,4984,Left Center Back,2700.0,2,Substitution - On (Tactical),,,Final Whistle,1
-3856030,2647,5058,Center Forward,0.0,1,Starting XI,,,Final Whistle,1
-3856030,2647,10192,Center Attacking Midfield,0.0,1,Starting XI,5343.023,2.0,Substitution - Off (Tactical),1
-3856030,2647,15421,Left Defensive Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3856030,2647,15562,Right Defensive Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3856030,2647,15571,Left Center Back,0.0,1,Starting XI,2091.618,1.0,Player Off,1
-3856030,2647,15571,Left Center Back,2114.701,1,Player On,2700.0,2.0,Substitution - Off (Tactical),2
-3856030,2647,15724,Left Back,0.0,1,Starting XI,2726.112,2.0,Player Off,1
-3856030,2647,15724,Left Back,2802.189,2,Player On,,,Final Whistle,2
-3856030,2647,18153,Right Wing,2700.0,2,Substitution - On (Tactical),3907.594,2.0,Tactical Shift,1
-3856030,2647,18153,Left Wing,3907.594,2,Tactical Shift,,,Final Whistle,2
-3856030,2647,19500,Right Back,0.0,1,Starting XI,,,Final Whistle,1
-3856030,2647,31532,Left Wing,0.0,1,Starting XI,3907.594,2.0,Tactical Shift,1
-3856030,2647,31532,Right Wing,3907.594,2,Tactical Shift,,,Final Whistle,2
-3856030,2647,33675,Right Wing,0.0,1,Starting XI,2700.0,2.0,Substitution - Off (Tactical),1
-3856030,2647,35406,Center Attacking Midfield,5343.023,2,Substitution - On (Tactical),,,Final Whistle,1
-3856030,2647,78072,Right Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3856030,2647,131589,Goalkeeper,0.0,1,Starting XI,,,Final Whistle,1
-3855980,746,4637,Goalkeeper,0.0,1,Starting XI,,,Final Whistle,1
-3855980,746,4649,Right Back,3631.85,2,Substitution - On (Tactical),,,Final Whistle,1
-3855980,746,6818,Right Wing,3630.357,2,Substitution - On (Tactical),,,Final Whistle,1
-3855980,746,10163,Left Back,0.0,1,Starting XI,,,Final Whistle,1
-3855980,746,10252,Left Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3855980,746,15570,Right Wing,0.0,1,Starting XI,3630.357,2.0,Substitution - Off (Tactical),1
-3855980,746,19416,Left Center Midfield,0.0,1,Starting XI,2700.0,2.0,Substitution - Off (Tactical),1
-3855980,746,25554,Center Forward,0.0,1,Starting XI,,,Final Whistle,1
-3855980,746,25632,Center Defensive Midfield,0.0,1,Starting XI,4381.165,2.0,Tactical Shift,1
-3855980,746,25632,Left Center Midfield,4381.165,2,Tactical Shift,,,Final Whistle,2
-3855980,746,32210,Right Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3855980,746,41812,Right Center Midfield,4351.641,2,Substitution - On (Tactical),4381.165,2.0,Tactical Shift,1
-3855980,746,41812,Center Defensive Midfield,4381.165,2,Tactical Shift,,,Final Whistle,2
-3855980,746,49938,Right Center Midfield,0.0,1,Starting XI,4351.641,2.0,Substitution - Off (Tactical),1
-3855980,746,62666,Left Center Midfield,2700.0,2,Substitution - On (Tactical),4381.165,2.0,Tactical Shift,1
-3855980,746,62666,Right Center Midfield,4381.165,2,Tactical Shift,,,Final Whistle,2
-3855980,746,191851,Left Wing,0.0,1,Starting XI,,,Final Whistle,1
-3855980,746,221888,Right Back,0.0,1,Starting XI,3631.85,2.0,Substitution - Off (Tactical),1
-3855980,965,15709,Goalkeeper,0.0,1,Starting XI,,,Final Whistle,1
-3855980,965,16395,Left Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3855980,965,16400,Right Center Back,0.0,1,Starting XI,2525.68,1.0,Player Off,1
-3855980,965,16400,Right Center Back,2549.885,1,Player On (Off Camera),,,Final Whistle,2
-3855980,965,17274,Left Back,0.0,1,Starting XI,,,Final Whistle,1
-3855980,965,21059,Right Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3855980,965,23413,Right Defensive Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3855980,965,24281,Left Center Forward,0.0,1,Starting XI,5058.533,2.0,Tactical Shift,1
-3855980,965,24281,Center Forward,5058.533,2,Tactical Shift,,,Final Whistle,2
-3855980,965,25453,Right Center Forward,0.0,1,Starting XI,5058.533,2.0,Tactical Shift,1
-3855980,965,25453,Left Midfield,5058.533,2,Tactical Shift,,,Final Whistle,2
-3855980,965,26094,Left Defensive Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3855980,965,50722,Left Midfield,5058.187,2,Substitution - On (Tactical),5058.533,2.0,Tactical Shift,1
-3855980,965,50722,Center Attacking Midfield,5058.533,2,Tactical Shift,,,Final Whistle,2
-3855980,965,81579,Right Back,0.0,1,Starting XI,,,Final Whistle,1
-3855980,965,105102,Left Midfield,0.0,1,Starting XI,5058.187,2.0,Substitution - Off (Tactical),1
-3855947,746,4637,Goalkeeper,0.0,1,Starting XI,,,Final Whistle,1
-3855947,746,4649,Left Back,0.0,1,Starting XI,4948.601,2.0,Tactical Shift,1
-3855947,746,4649,Left Center Back,4948.601,2,Tactical Shift,,,Final Whistle,2
-3855947,746,6818,Right Wing,4339.247,2,Substitution - On (Tactical),,,Final Whistle,1
-3855947,746,10163,Right Center Back,4756.285,2,Substitution - On (Tactical),4948.601,2.0,Tactical Shift,1
-3855947,746,10163,Left Back,4948.601,2,Tactical Shift,,,Final Whistle,2
-3855947,746,10185,Left Center Back,4887.701,2,Substitution - On (Tactical),4948.601,2.0,Tactical Shift,1
-3855947,746,10185,Right Center Back,4948.601,2,Tactical Shift,,,Final Whistle,2
-3855947,746,10252,Left Center Back,0.0,1,Starting XI,4887.701,2.0,Substitution - Off (Tactical),1
-3855947,746,15555,Left Wing,0.0,1,Starting XI,4869.996,2.0,Substitution - Off (Tactical),1
-3855947,746,15570,Right Wing,0.0,1,Starting XI,4339.247,2.0,Substitution - Off (Tactical),1
-3855947,746,19416,Left Center Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3855947,746,25554,Center Forward,0.0,1,Starting XI,,,Final Whistle,1
-3855947,746,25632,Center Defensive Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3855947,746,32210,Right Center Back,0.0,1,Starting XI,4756.285,2.0,Substitution - Off (Tactical),1
-3855947,746,49938,Right Center Midfield,0.0,1,Starting XI,4729.347,2.0,Substitution - Off (Tactical),1
-3855947,746,62666,Right Center Midfield,4729.347,2,Substitution - On (Tactical),,,Final Whistle,1
-3855947,746,191851,Left Wing,4869.996,2,Substitution - On (Tactical),,,Final Whistle,1
-3855947,746,221888,Right Back,0.0,1,Starting XI,,,Final Whistle,1
-3855947,2652,4865,Left Defensive Midfield,0.0,1,Starting XI,3902.93,2.0,Player Off (Off Camera),1
-3855947,2652,4865,Left Defensive Midfield,3923.123,2,Player On (Off Camera),4132.187,2.0,Substitution - Off (Tactical),2
-3855947,2652,15576,Goalkeeper,0.0,1,Starting XI,,,Final Whistle,1
-3855947,2652,15720,Right Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3855947,2652,16374,Center Attacking Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3855947,2652,18155,Right Back,0.0,1,Starting XI,,,Final Whistle,1
-3855947,2652,24239,Left Midfield,0.0,1,Starting XI,3365.603,2.0,Substitution - Off (Tactical),1
-3855947,2652,25662,Left Back,0.0,1,Starting XI,,,Final Whistle,1
-3855947,2652,31564,Left Midfield,3365.603,2,Substitution - On (Tactical),4149.885,2.0,Tactical Shift,1
-3855947,2652,31564,Left Defensive Midfield,4149.885,2,Tactical Shift,,,Final Whistle,2
-3855947,2652,84765,Right Midfield,0.0,1,Starting XI,3371.709,2.0,Substitution - Off (Tactical),1
-3855947,2652,112522,Right Midfield,3371.709,2,Substitution - On (Tactical),,,Final Whistle,1
-3855947,2652,135753,Right Defensive Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3855947,2652,135755,Left Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3855947,2652,135758,Left Defensive Midfield,4132.187,2,Substitution - On (Tactical),4149.885,2.0,Tactical Shift,1
-3855947,2652,135758,Center Forward,4149.885,2,Tactical Shift,,,Final Whistle,2
-3855947,2652,135759,Center Forward,0.0,1,Starting XI,4149.885,2.0,Tactical Shift,1
-3855947,2652,135759,Left Midfield,4149.885,2,Tactical Shift,,,Final Whistle,2
-3855961,746,4637,Goalkeeper,0.0,1,Starting XI,,,Final Whistle,1
-3855961,746,4649,Left Back,0.0,1,Starting XI,,,Final Whistle,1
-3855961,746,6818,Right Wing,4102.694,2,Substitution - On (Tactical),,,Final Whistle,1
-3855961,746,10252,Left Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3855961,746,15555,Left Wing,0.0,1,Starting XI,,,Final Whistle,1
-3855961,746,15570,Right Wing,0.0,1,Starting XI,4102.694,2.0,Substitution - Off (Tactical),1
-3855961,746,19416,Left Center Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3855961,746,25554,Center Forward,0.0,1,Starting XI,4963.527,2.0,Substitution - Off (Tactical),1
-3855961,746,25632,Center Defensive Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3855961,746,32210,Right Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3855961,746,35693,Center Forward,4963.527,2,Substitution - On (Tactical),,,Final Whistle,1
-3855961,746,49938,Right Center Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3855961,746,221888,Right Back,0.0,1,Starting XI,,,Final Whistle,1
-3855961,966,4972,Left Center Forward,0.0,1,Starting XI,4545.691,2.0,Tactical Shift,1
-3855961,966,4972,Center Attacking Midfield,4545.691,2,Tactical Shift,,,Final Whistle,2
-3855961,966,10093,Right Center Forward,4507.932,2,Substitution - On (Tactical),4545.691,2.0,Tactical Shift,1
-3855961,966,10093,Left Center Forward,4545.691,2,Tactical Shift,,,Final Whistle,2
-3855961,966,10648,Right Defensive Midfield,4537.061,2,Substitution - On (Tactical),4545.691,2.0,Tactical Shift,1
-3855961,966,10648,Right Center Forward,4545.691,2,Tactical Shift,,,Final Whistle,2
-3855961,966,15547,Right Center Forward,0.0,1,Starting XI,4507.932,2.0,Substitution - Off (Tactical),1
-3855961,966,15618,Left Defensive Midfield,0.0,1,Starting XI,5384.517,2.0,Tactical Shift,1
-3855961,966,15618,Left Center Back,5384.517,2,Tactical Shift,,,Final Whistle,2
-3855961,966,15706,Right Defensive Midfield,0.0,1,Starting XI,4537.061,2.0,Substitution - Off (Tactical),1
-3855961,966,16384,Center Attacking Midfield,4524.52,2,Substitution - On (Tactical),4545.691,2.0,Tactical Shift,1
-3855961,966,16384,Right Defensive Midfield,4545.691,2,Tactical Shift,,,Final Whistle,2
-3855961,966,18151,Right Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3855961,966,19687,Left Wing Back,0.0,1,Starting XI,4962.576,2.0,Substitution - Off (Tactical),1
-3855961,966,19777,Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3855961,966,19779,Left Wing Back,4962.576,2,Substitution - On (Tactical),4962.804,2.0,Tactical Shift,1
-3855961,966,19779,Right Wing Back,4962.804,2,Tactical Shift,,,Final Whistle,2
-3855961,966,23465,Left Center Back,0.0,1,Starting XI,5384.517,2.0,Tactical Shift,1
-3855961,966,23465,Left Wing Back,5384.517,2,Tactical Shift,,,Final Whistle,2
-3855961,966,24237,Center Attacking Midfield,0.0,1,Starting XI,4273.223,2.0,Player Off,1
-3855961,966,24237,Center Attacking Midfield,4292.808,2,Player On,4524.52,2.0,Substitution - Off (Tactical),2
-3855961,966,32403,Right Wing Back,0.0,1,Starting XI,4962.804,2.0,Tactical Shift,1
-3855961,966,32403,Left Wing Back,4962.804,2,Tactical Shift,5379.174,2.0,Substitution - Off (Tactical),2
-3855961,966,33664,Goalkeeper,0.0,1,Starting XI,,,Final Whistle,1
-3855961,966,42834,Left Wing Back,5379.174,2,Substitution - On (Tactical),5384.517,2.0,Tactical Shift,1
-3855961,966,42834,Left Defensive Midfield,5384.517,2,Tactical Shift,,,Final Whistle,2
-3856040,746,4637,Goalkeeper,0.0,1,Starting XI,,,Final Whistle,1
-3856040,746,4649,Right Center Back,5034.997,2,Substitution - On (Tactical),,,Final Whistle,1
-3856040,746,4651,Left Back,5283.276,2,Substitution - On (Tactical),,,Final Whistle,1
-3856040,746,10163,Left Back,0.0,1,Starting XI,5283.276,2.0,Substitution - Off (Tactical),1
-3856040,746,10185,Right Center Back,0.0,1,Starting XI,5034.997,2.0,Substitution - Off (Tactical),1
-3856040,746,10252,Left Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3856040,746,15555,Left Wing,0.0,1,Starting XI,5009.25,2.0,Substitution - Off (Tactical),1
-3856040,746,15570,Right Wing,0.0,1,Starting XI,5355.016,2.0,Tactical Shift,1
-3856040,746,15570,Left Wing,5355.016,2,Tactical Shift,,,Final Whistle,2
-3856040,746,19416,Left Center Midfield,0.0,1,Starting XI,5018.956,2.0,Substitution - Off (Tactical),1
-3856040,746,25554,Center Forward,0.0,1,Starting XI,5306.283,2.0,Substitution - Off (Tactical),1
-3856040,746,25632,Center Defensive Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3856040,746,32210,Right Back,0.0,1,Starting XI,,,Final Whistle,1
-3856040,746,35693,Center Forward,5306.283,2,Substitution - On (Tactical),,,Final Whistle,1
-3856040,746,49938,Left Center Midfield,5018.956,2,Substitution - On (Tactical),,,Final Whistle,1
-3856040,746,62666,Right Center Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3856040,746,191851,Left Wing,5009.25,2,Substitution - On (Tactical),5355.016,2.0,Tactical Shift,1
-3856040,746,191851,Right Wing,5355.016,2,Tactical Shift,,,Final Whistle,2
-3856040,749,4638,Right Defensive Midfield,0.0,1,Starting XI,4986.269,2.0,Substitution - Off (Tactical),1
-3856040,749,4848,Left Wing Back,0.0,1,Starting XI,,,Final Whistle,1
-3856040,749,13857,Goalkeeper,0.0,1,Starting XI,,,Final Whistle,1
-3856040,749,15569,Left Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3856040,749,15577,Left Defensive Midfield,0.0,1,Starting XI,,,Final Whistle,1
-3856040,749,21021,Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3856040,749,21048,Right Wing,0.0,1,Starting XI,3791.792,2.0,Substitution - Off (Tactical),1
-3856040,749,22798,Right Defensive Midfield,4986.269,2,Substitution - On (Tactical),,,Final Whistle,1
-3856040,749,25610,Left Wing,0.0,1,Starting XI,3857.025,2.0,Tactical Shift,1
-3856040,749,25610,Right Wing,3857.025,2,Tactical Shift,,,Final Whistle,2
-3856040,749,31533,Right Center Back,0.0,1,Starting XI,,,Final Whistle,1
-3856040,749,31551,Right Wing,3791.792,2,Substitution - On (Tactical),3857.025,2.0,Tactical Shift,1
-3856040,749,31551,Left Wing,3857.025,2,Tactical Shift,,,Final Whistle,2
-3856040,749,63424,Center Forward,0.0,1,Starting XI,5477.459,2.0,Substitution - Off (Tactical),1
-3856040,749,87194,Right Wing Back,0.0,1,Starting XI,,,Final Whistle,1
-3856040,749,353330,Center Forward,5477.459,2,Substitution - On (Tactical),,,Final Whistle,1
+3852832,746,4637,Goalkeeper,0.0,1.0,Starting XI,,,Final Whistle,1
+3852832,746,6818,Right Wing,5429.931,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3852832,746,10163,,,,,,,,0
+3852832,746,10185,Right Center Back,0.0,1.0,Starting XI,4291.624,2.0,Player Off,1
+3852832,746,10185,Right Center Back,4306.595,2.0,Player On,,,Final Whistle,2
+3852832,746,10252,Left Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3852832,746,15555,Left Wing,0.0,1.0,Starting XI,,,Final Whistle,1
+3852832,746,15570,Right Wing,0.0,1.0,Starting XI,5429.931,2.0,Substitution - Off (Tactical),1
+3852832,746,19416,Left Center Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3852832,746,25554,Center Forward,0.0,1.0,Starting XI,2012.838,1.0,Player Off,1
+3852832,746,25554,Center Forward,2075.225,1.0,Player On (Off Camera),,,Final Whistle,2
+3852832,746,25632,Center Defensive Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3852832,746,32210,Left Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3852832,746,34360,,,,,,,,0
+3852832,746,35693,,,,,,,,0
+3852832,746,49938,,,,,,,,0
+3852832,746,62666,Right Center Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3852832,746,191851,,,,,,,,0
+3852832,746,221888,Right Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3852832,968,5000,Left Wing Back,0.0,1.0,Starting XI,2700.0,2.0,Tactical Shift,1
+3852832,968,5000,Left Back,2700.0,2.0,Tactical Shift,,,Final Whistle,2
+3852832,968,5102,,,,,,,,0
+3852832,968,10229,Center Forward,0.0,1.0,Starting XI,2700.0,2.0,Tactical Shift,1
+3852832,968,10229,Right Center Forward,2700.0,2.0,Tactical Shift,4273.076,2.0,Player Off,2
+3852832,968,10229,Right Center Forward,4302.799,2.0,Player On,4819.678,2.0,Substitution - Off (Tactical),3
+3852832,968,10237,Goalkeeper,0.0,1.0,Starting XI,,,Final Whistle,1
+3852832,968,10404,Right Wing Back,0.0,1.0,Starting XI,2700.0,2.0,Tactical Shift,1
+3852832,968,10404,Right Back,2700.0,2.0,Tactical Shift,4806.019,2.0,Substitution - Off (Tactical),2
+3852832,968,10405,Left Defensive Midfield,2700.0,2.0,Tactical Shift,2700.0,2.0,Substitution - On (Tactical),1
+3852832,968,10405,Center Back,2700.0,2.0,Substitution - On (Tactical),,,Final Whistle,2
+3852832,968,10516,Left Defensive Midfield,0.0,1.0,Starting XI,2700.0,2.0,Tactical Shift,1
+3852832,968,10516,Left Center Forward,2700.0,2.0,Tactical Shift,,,Final Whistle,2
+3852832,968,11338,Left Wing,0.0,1.0,Starting XI,2700.0,2.0,Substitution - Off (Tactical),1
+3852832,968,15616,Right Defensive Midfield,0.0,1.0,Starting XI,3094.793,2.0,Player Off,1
+3852832,968,15616,Right Defensive Midfield,3137.135,2.0,Player On,,,Final Whistle,2
+3852832,968,15620,Right Midfield,2700.0,2.0,Tactical Shift,2700.0,2.0,Substitution - On (Tactical),1
+3852832,968,15620,Left Wing,2700.0,2.0,Substitution - On (Tactical),,,Final Whistle,2
+3852832,968,17524,,,,,,,,0
+3852832,968,18999,Right Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3852832,968,25697,,,,,,,,0
+3852832,968,40985,,,,,,,,0
+3852832,968,45294,Right Center Forward,4819.678,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3852832,968,46973,Right Back,4806.019,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3852832,968,49697,Center Back,0.0,1.0,Starting XI,2700.0,2.0,Substitution - Off (Tactical),1
+3852832,968,63788,Right Wing,0.0,1.0,Starting XI,2700.0,2.0,Tactical Shift,1
+3852832,968,63788,Left Midfield,2700.0,2.0,Tactical Shift,4078.369,2.0,Substitution - Off (Tactical),2
+3852832,968,131570,Left Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3852832,968,276443,Left Midfield,4078.369,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3856030,746,4637,Goalkeeper,0.0,1.0,Starting XI,,,Final Whistle,1
+3856030,746,4649,Right Back,0.0,1.0,Starting XI,2700.0,2.0,Substitution - Off (Tactical),1
+3856030,746,5078,Right Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3856030,746,6818,Right Midfield,4324.881,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3856030,746,10158,,,,,,,,0
+3856030,746,10163,Left Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3856030,746,10185,,,,,,,,0
+3856030,746,10252,Left Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3856030,746,15555,Left Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3856030,746,15570,Right Midfield,0.0,1.0,Starting XI,4324.881,2.0,Substitution - Off (Tactical),1
+3856030,746,19416,Left Center Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3856030,746,25554,Center Forward,0.0,1.0,Starting XI,,,Final Whistle,1
+3856030,746,25632,Center Defensive Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3856030,746,32210,,,,,,,,0
+3856030,746,34360,,,,,,,,0
+3856030,746,35693,,,,,,,,0
+3856030,746,49938,Right Center Midfield,0.0,1.0,Starting XI,3680.481,2.0,Substitution - Off (Tactical),1
+3856030,746,62666,Right Center Midfield,3680.481,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3856030,746,191851,,,,,,,,0
+3856030,746,221888,Right Back,2700.0,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3856030,2647,4984,Left Center Back,2700.0,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3856030,2647,5058,Center Forward,0.0,1.0,Starting XI,,,Final Whistle,1
+3856030,2647,10192,Center Attacking Midfield,0.0,1.0,Starting XI,5343.023,2.0,Substitution - Off (Tactical),1
+3856030,2647,15421,Left Defensive Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3856030,2647,15562,Right Defensive Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3856030,2647,15571,Left Center Back,0.0,1.0,Starting XI,2091.618,1.0,Player Off,1
+3856030,2647,15571,Left Center Back,2114.701,1.0,Player On,2700.0,2.0,Substitution - Off (Tactical),2
+3856030,2647,15724,Left Back,0.0,1.0,Starting XI,2726.112,2.0,Player Off,1
+3856030,2647,15724,Left Back,2802.189,2.0,Player On,,,Final Whistle,2
+3856030,2647,18153,Right Wing,2700.0,2.0,Substitution - On (Tactical),3907.594,2.0,Tactical Shift,1
+3856030,2647,18153,Left Wing,3907.594,2.0,Tactical Shift,,,Final Whistle,2
+3856030,2647,19500,Right Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3856030,2647,22032,,,,,,,,0
+3856030,2647,25744,,,,,,,,0
+3856030,2647,31532,Left Wing,0.0,1.0,Starting XI,3907.594,2.0,Tactical Shift,1
+3856030,2647,31532,Right Wing,3907.594,2.0,Tactical Shift,,,Final Whistle,2
+3856030,2647,33675,Right Wing,0.0,1.0,Starting XI,2700.0,2.0,Substitution - Off (Tactical),1
+3856030,2647,35406,Center Attacking Midfield,5343.023,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3856030,2647,77717,,,,,,,,0
+3856030,2647,78072,Right Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3856030,2647,131589,Goalkeeper,0.0,1.0,Starting XI,,,Final Whistle,1
+3855980,746,4637,Goalkeeper,0.0,1.0,Starting XI,,,Final Whistle,1
+3855980,746,4649,Right Back,3631.85,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3855980,746,4651,,,,,,,,0
+3855980,746,5078,,,,,,,,0
+3855980,746,6818,Right Wing,3630.357,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3855980,746,10163,Left Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855980,746,10185,,,,,,,,0
+3855980,746,10252,Left Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855980,746,15570,Right Wing,0.0,1.0,Starting XI,3630.357,2.0,Substitution - Off (Tactical),1
+3855980,746,19416,Left Center Midfield,0.0,1.0,Starting XI,2700.0,2.0,Substitution - Off (Tactical),1
+3855980,746,25554,Center Forward,0.0,1.0,Starting XI,,,Final Whistle,1
+3855980,746,25632,Center Defensive Midfield,0.0,1.0,Starting XI,4381.165,2.0,Tactical Shift,1
+3855980,746,25632,Left Center Midfield,4381.165,2.0,Tactical Shift,,,Final Whistle,2
+3855980,746,32210,Right Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855980,746,34360,,,,,,,,0
+3855980,746,41812,Right Center Midfield,4351.641,2.0,Substitution - On (Tactical),4381.165,2.0,Tactical Shift,1
+3855980,746,41812,Center Defensive Midfield,4381.165,2.0,Tactical Shift,,,Final Whistle,2
+3855980,746,49938,Right Center Midfield,0.0,1.0,Starting XI,4351.641,2.0,Substitution - Off (Tactical),1
+3855980,746,62666,Left Center Midfield,2700.0,2.0,Substitution - On (Tactical),4381.165,2.0,Tactical Shift,1
+3855980,746,62666,Right Center Midfield,4381.165,2.0,Tactical Shift,,,Final Whistle,2
+3855980,746,191851,Left Wing,0.0,1.0,Starting XI,,,Final Whistle,1
+3855980,746,221888,Right Back,0.0,1.0,Starting XI,3631.85,2.0,Substitution - Off (Tactical),1
+3855980,746,321997,,,,,,,,0
+3855980,965,4989,,,,,,,,0
+3855980,965,15709,Goalkeeper,0.0,1.0,Starting XI,,,Final Whistle,1
+3855980,965,16395,Left Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855980,965,16400,Right Center Back,0.0,1.0,Starting XI,2525.68,1.0,Player Off,1
+3855980,965,16400,Right Center Back,2549.885,1.0,Player On (Off Camera),,,Final Whistle,2
+3855980,965,17274,Left Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855980,965,21059,Right Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3855980,965,23413,Right Defensive Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3855980,965,24281,Left Center Forward,0.0,1.0,Starting XI,5058.533,2.0,Tactical Shift,1
+3855980,965,24281,Center Forward,5058.533,2.0,Tactical Shift,,,Final Whistle,2
+3855980,965,25453,Right Center Forward,0.0,1.0,Starting XI,5058.533,2.0,Tactical Shift,1
+3855980,965,25453,Left Midfield,5058.533,2.0,Tactical Shift,,,Final Whistle,2
+3855980,965,26094,Left Defensive Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3855980,965,34506,,,,,,,,0
+3855980,965,50722,Left Midfield,5058.187,2.0,Substitution - On (Tactical),5058.533,2.0,Tactical Shift,1
+3855980,965,50722,Center Attacking Midfield,5058.533,2.0,Tactical Shift,,,Final Whistle,2
+3855980,965,81579,Right Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855980,965,85004,,,,,,,,0
+3855980,965,105102,Left Midfield,0.0,1.0,Starting XI,5058.187,2.0,Substitution - Off (Tactical),1
+3855980,965,105103,,,,,,,,0
+3855980,965,276301,,,,,,,,0
+3855980,965,320404,,,,,,,,0
+3855947,746,4637,Goalkeeper,0.0,1.0,Starting XI,,,Final Whistle,1
+3855947,746,4649,Left Back,0.0,1.0,Starting XI,4948.601,2.0,Tactical Shift,1
+3855947,746,4649,Left Center Back,4948.601,2.0,Tactical Shift,,,Final Whistle,2
+3855947,746,4651,,,,,,,,0
+3855947,746,6818,Right Wing,4339.247,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3855947,746,10158,,,,,,,,0
+3855947,746,10163,Right Center Back,4756.285,2.0,Substitution - On (Tactical),4948.601,2.0,Tactical Shift,1
+3855947,746,10163,Left Back,4948.601,2.0,Tactical Shift,,,Final Whistle,2
+3855947,746,10185,Left Center Back,4887.701,2.0,Substitution - On (Tactical),4948.601,2.0,Tactical Shift,1
+3855947,746,10185,Right Center Back,4948.601,2.0,Tactical Shift,,,Final Whistle,2
+3855947,746,10252,Left Center Back,0.0,1.0,Starting XI,4887.701,2.0,Substitution - Off (Tactical),1
+3855947,746,15555,Left Wing,0.0,1.0,Starting XI,4869.996,2.0,Substitution - Off (Tactical),1
+3855947,746,15570,Right Wing,0.0,1.0,Starting XI,4339.247,2.0,Substitution - Off (Tactical),1
+3855947,746,19416,Left Center Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3855947,746,25554,Center Forward,0.0,1.0,Starting XI,,,Final Whistle,1
+3855947,746,25632,Center Defensive Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3855947,746,32210,Right Center Back,0.0,1.0,Starting XI,4756.285,2.0,Substitution - Off (Tactical),1
+3855947,746,34360,,,,,,,,0
+3855947,746,35693,,,,,,,,0
+3855947,746,49938,Right Center Midfield,0.0,1.0,Starting XI,4729.347,2.0,Substitution - Off (Tactical),1
+3855947,746,62666,Right Center Midfield,4729.347,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3855947,746,191851,Left Wing,4869.996,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3855947,746,221888,Right Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855947,2652,4648,,,,,,,,0
+3855947,2652,4865,Left Defensive Midfield,0.0,1.0,Starting XI,3902.93,2.0,Player Off (Off Camera),1
+3855947,2652,4865,Left Defensive Midfield,3923.123,2.0,Player On (Off Camera),4132.187,2.0,Substitution - Off (Tactical),2
+3855947,2652,15576,Goalkeeper,0.0,1.0,Starting XI,,,Final Whistle,1
+3855947,2652,15720,Right Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855947,2652,16374,Center Attacking Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3855947,2652,18155,Right Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855947,2652,21556,,,,,,,,0
+3855947,2652,24239,Left Midfield,0.0,1.0,Starting XI,3365.603,2.0,Substitution - Off (Tactical),1
+3855947,2652,25662,Left Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855947,2652,31564,Left Midfield,3365.603,2.0,Substitution - On (Tactical),4149.885,2.0,Tactical Shift,1
+3855947,2652,31564,Left Defensive Midfield,4149.885,2.0,Tactical Shift,,,Final Whistle,2
+3855947,2652,46739,,,,,,,,0
+3855947,2652,84765,Right Midfield,0.0,1.0,Starting XI,3371.709,2.0,Substitution - Off (Tactical),1
+3855947,2652,112522,Right Midfield,3371.709,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3855947,2652,135753,Right Defensive Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3855947,2652,135755,Left Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855947,2652,135758,Left Defensive Midfield,4132.187,2.0,Substitution - On (Tactical),4149.885,2.0,Tactical Shift,1
+3855947,2652,135758,Center Forward,4149.885,2.0,Tactical Shift,,,Final Whistle,2
+3855947,2652,135759,Center Forward,0.0,1.0,Starting XI,4149.885,2.0,Tactical Shift,1
+3855947,2652,135759,Left Midfield,4149.885,2.0,Tactical Shift,,,Final Whistle,2
+3855947,2652,276299,,,,,,,,0
+3855947,2652,322143,,,,,,,,0
+3855961,746,4637,Goalkeeper,0.0,1.0,Starting XI,,,Final Whistle,1
+3855961,746,4649,Left Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855961,746,4651,,,,,,,,0
+3855961,746,6818,Right Wing,4102.694,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3855961,746,10163,,,,,,,,0
+3855961,746,10185,,,,,,,,0
+3855961,746,10252,Left Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855961,746,15555,Left Wing,0.0,1.0,Starting XI,,,Final Whistle,1
+3855961,746,15570,Right Wing,0.0,1.0,Starting XI,4102.694,2.0,Substitution - Off (Tactical),1
+3855961,746,19416,Left Center Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3855961,746,25554,Center Forward,0.0,1.0,Starting XI,4963.527,2.0,Substitution - Off (Tactical),1
+3855961,746,25632,Center Defensive Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3855961,746,32210,Right Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855961,746,34360,,,,,,,,0
+3855961,746,35693,Center Forward,4963.527,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3855961,746,49938,Right Center Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3855961,746,62666,,,,,,,,0
+3855961,746,191851,,,,,,,,0
+3855961,746,221888,Right Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855961,746,321997,,,,,,,,0
+3855961,966,4972,Left Center Forward,0.0,1.0,Starting XI,4545.691,2.0,Tactical Shift,1
+3855961,966,4972,Center Attacking Midfield,4545.691,2.0,Tactical Shift,,,Final Whistle,2
+3855961,966,10093,Right Center Forward,4507.932,2.0,Substitution - On (Tactical),4545.691,2.0,Tactical Shift,1
+3855961,966,10093,Left Center Forward,4545.691,2.0,Tactical Shift,,,Final Whistle,2
+3855961,966,10648,Right Defensive Midfield,4537.061,2.0,Substitution - On (Tactical),4545.691,2.0,Tactical Shift,1
+3855961,966,10648,Right Center Forward,4545.691,2.0,Tactical Shift,,,Final Whistle,2
+3855961,966,15547,Right Center Forward,0.0,1.0,Starting XI,4507.932,2.0,Substitution - Off (Tactical),1
+3855961,966,15618,Left Defensive Midfield,0.0,1.0,Starting XI,5384.517,2.0,Tactical Shift,1
+3855961,966,15618,Left Center Back,5384.517,2.0,Tactical Shift,,,Final Whistle,2
+3855961,966,15630,,,,,,,,0
+3855961,966,15706,Right Defensive Midfield,0.0,1.0,Starting XI,4537.061,2.0,Substitution - Off (Tactical),1
+3855961,966,16384,Center Attacking Midfield,4524.52,2.0,Substitution - On (Tactical),4545.691,2.0,Tactical Shift,1
+3855961,966,16384,Right Defensive Midfield,4545.691,2.0,Tactical Shift,,,Final Whistle,2
+3855961,966,18151,Right Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855961,966,19687,Left Wing Back,0.0,1.0,Starting XI,4962.576,2.0,Substitution - Off (Tactical),1
+3855961,966,19777,Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3855961,966,19779,Left Wing Back,4962.576,2.0,Substitution - On (Tactical),4962.804,2.0,Tactical Shift,1
+3855961,966,19779,Right Wing Back,4962.804,2.0,Tactical Shift,,,Final Whistle,2
+3855961,966,23465,Left Center Back,0.0,1.0,Starting XI,5384.517,2.0,Tactical Shift,1
+3855961,966,23465,Left Wing Back,5384.517,2.0,Tactical Shift,,,Final Whistle,2
+3855961,966,24237,Center Attacking Midfield,0.0,1.0,Starting XI,4273.223,2.0,Player Off,1
+3855961,966,24237,Center Attacking Midfield,4292.808,2.0,Player On,4524.52,2.0,Substitution - Off (Tactical),2
+3855961,966,32403,Right Wing Back,0.0,1.0,Starting XI,4962.804,2.0,Tactical Shift,1
+3855961,966,32403,Left Wing Back,4962.804,2.0,Tactical Shift,5379.174,2.0,Substitution - Off (Tactical),2
+3855961,966,33664,Goalkeeper,0.0,1.0,Starting XI,,,Final Whistle,1
+3855961,966,37173,,,,,,,,0
+3855961,966,42834,Left Wing Back,5379.174,2.0,Substitution - On (Tactical),5384.517,2.0,Tactical Shift,1
+3855961,966,42834,Left Defensive Midfield,5384.517,2.0,Tactical Shift,,,Final Whistle,2
+3855961,966,322358,,,,,,,,0
+3855961,966,322359,,,,,,,,0
+3856040,746,4637,Goalkeeper,0.0,1.0,Starting XI,,,Final Whistle,1
+3856040,746,4649,Right Center Back,5034.997,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3856040,746,4651,Left Back,5283.276,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3856040,746,10163,Left Back,0.0,1.0,Starting XI,5283.276,2.0,Substitution - Off (Tactical),1
+3856040,746,10185,Right Center Back,0.0,1.0,Starting XI,5034.997,2.0,Substitution - Off (Tactical),1
+3856040,746,10252,Left Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3856040,746,15555,Left Wing,0.0,1.0,Starting XI,5009.25,2.0,Substitution - Off (Tactical),1
+3856040,746,15570,Right Wing,0.0,1.0,Starting XI,5355.016,2.0,Tactical Shift,1
+3856040,746,15570,Left Wing,5355.016,2.0,Tactical Shift,,,Final Whistle,2
+3856040,746,19416,Left Center Midfield,0.0,1.0,Starting XI,5018.956,2.0,Substitution - Off (Tactical),1
+3856040,746,25554,Center Forward,0.0,1.0,Starting XI,5306.283,2.0,Substitution - Off (Tactical),1
+3856040,746,25632,Center Defensive Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3856040,746,32210,Right Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3856040,746,34360,,,,,,,,0
+3856040,746,35693,Center Forward,5306.283,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3856040,746,49938,Left Center Midfield,5018.956,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3856040,746,62666,Right Center Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3856040,746,189745,,,,,,,,0
+3856040,746,191851,Left Wing,5009.25,2.0,Substitution - On (Tactical),5355.016,2.0,Tactical Shift,1
+3856040,746,191851,Right Wing,5355.016,2.0,Tactical Shift,,,Final Whistle,2
+3856040,746,221888,,,,,,,,0
+3856040,749,4638,Right Defensive Midfield,0.0,1.0,Starting XI,4986.269,2.0,Substitution - Off (Tactical),1
+3856040,749,4848,Left Wing Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3856040,749,5063,,,,,,,,0
+3856040,749,13857,Goalkeeper,0.0,1.0,Starting XI,,,Final Whistle,1
+3856040,749,15569,Left Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3856040,749,15577,Left Defensive Midfield,0.0,1.0,Starting XI,,,Final Whistle,1
+3856040,749,18158,,,,,,,,0
+3856040,749,21021,Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3856040,749,21048,Right Wing,0.0,1.0,Starting XI,3791.792,2.0,Substitution - Off (Tactical),1
+3856040,749,22798,Right Defensive Midfield,4986.269,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3856040,749,25610,Left Wing,0.0,1.0,Starting XI,3857.025,2.0,Tactical Shift,1
+3856040,749,25610,Right Wing,3857.025,2.0,Tactical Shift,,,Final Whistle,2
+3856040,749,31533,Right Center Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3856040,749,31551,Right Wing,3791.792,2.0,Substitution - On (Tactical),3857.025,2.0,Tactical Shift,1
+3856040,749,31551,Left Wing,3857.025,2.0,Tactical Shift,,,Final Whistle,2
+3856040,749,46541,,,,,,,,0
+3856040,749,63424,Center Forward,0.0,1.0,Starting XI,5477.459,2.0,Substitution - Off (Tactical),1
+3856040,749,87194,Right Wing Back,0.0,1.0,Starting XI,,,Final Whistle,1
+3856040,749,353330,Center Forward,5477.459,2.0,Substitution - On (Tactical),,,Final Whistle,1
+3856040,749,355828,,,,,,,,0
